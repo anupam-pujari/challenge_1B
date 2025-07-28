@@ -40,7 +40,7 @@ The system works in the following stages:
 ### 🔧 1. Build Docker Image (One-Time)
 ```bash
 docker build -t persona-doc-intel .
-
+```
 🚀 Step 2: Run with Your PDFs and Persona Inputs
 Make sure to:
 
