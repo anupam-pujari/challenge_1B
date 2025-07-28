@@ -51,35 +51,28 @@ Output will be saved inside the output/ folder.
 Pass the persona and job-to-be-done using environment variables.
 
 ▶ On Windows (PowerShell)
-powershell
-Copy
-Edit
+```
 docker run --rm -v "${PWD}\output:/app/output" `
   -v "${PWD}\data:/app/data" `
   -e PERSONA="Investment Analyst" `
   -e JOB="Analyze revenue trends, R&D investments, and market positioning strategies" `
   persona-doc-intel
+```
 ▶ On Linux/macOS
-bash
-Copy
-Edit
+```
 docker run --rm \
   -v "$(pwd)/data:/app/data" \
   -v "$(pwd)/output:/app/output" \
   -e PERSONA="Investment Analyst" \
   -e JOB="Analyze revenue trends, R&D investments, and market positioning strategies" \
   persona-doc-intel
+```
 📤 Output
 The extracted, ranked, and structured sections will be available at:
-
-bash
-Copy
-Edit
 output/result.json
+
 📁 Directory Structure
-bash
-Copy
-Edit
+```
 persona_doc_intelligence/
 ├── data/                   # Input PDFs
 │   └── *.pdf
@@ -94,6 +87,7 @@ persona_doc_intelligence/
 ├── Dockerfile              # Docker environment config
 ├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
+```
 ✅ Offline & Efficient
 🧠 Model size: < 1GB
 
